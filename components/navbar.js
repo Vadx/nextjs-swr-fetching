@@ -14,6 +14,11 @@ const Navbar = () => (
           <a className='nav-link'>Posts</a>
         </Link>
       </li>
+      <li>
+        <Link href='/users'>
+          <a className='nav-link'>Users</a>
+        </Link>
+      </li>
     </ul>
   </nav>
 )

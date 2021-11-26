@@ -1,10 +1,10 @@
-import Navbar from './navbar'
 import { Container } from '@chakra-ui/react'
+import Header from './header'
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <Header />
       <Container>
         {children}
       </Container>
