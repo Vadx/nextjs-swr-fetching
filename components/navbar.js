@@ -1,25 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
+import { Box } from '@chakra-ui/react'
+
+function Item ({ children }) {
+  return (
+    <Box as='li' mr={10}>
+      {children}
+    </Box>
+  )
+}
 
 const Navbar = () => (
   <nav>
-    <ul className='nav'>
-      <li>
+    <Box as='ul' sx={{ listStyle: 'none', display: 'flex' }}>
+      <Item>
         <Link href='/'>
-          <a className='nav-link'>Home</a>
+          <a>Home</a>
         </Link>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <Link href='/posts'>
-          <a className='nav-link'>Posts</a>
+          <a>Posts</a>
         </Link>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <Link href='/users'>
-          <a className='nav-link'>Users</a>
+          <a>Users</a>
         </Link>
-      </li>
-    </ul>
+      </Item>
+    </Box>
   </nav>
 )
 
