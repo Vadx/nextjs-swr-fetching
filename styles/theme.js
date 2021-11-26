@@ -2,6 +2,17 @@
 import { extendTheme } from "@chakra-ui/react"
 
 const colors = {
+  styles: {
+    global: {
+      "html, body": {
+        color: "gray.600",
+        lineHeight: "tall",
+      },
+      a: {
+        color: "teal.500",
+      },
+    },
+  },
   brand: {
     900: "#1a365d",
     800: "#153e75",
